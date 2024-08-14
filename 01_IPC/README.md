@@ -39,7 +39,7 @@ El diseño debe contemplar toda situación no descripta en el presente documento
 ## Desarrollo
 
 Diagrama del Programa:
-![](https://github.com/adgko/C-Codes-/blob/main/01_IPC/img/Diagrama%20de%20Sistema.jpg)
+![](https://github.com/adgko/C-Codes/blob/main/01_IPC/img/Diagrama%20de%20Sistema.jpg)
 
 ### Delivery Manager
 Para el desarrollo del Delivery Manager se trabajó en los siguientes puntos.
@@ -125,7 +125,7 @@ El proceso consiste en que CLI envía un mensaje de log ocon la ip y puerto de u
 Downloader por otro lado, es creado por un socket cliente que recibe una descarga, este se conecta con File, negocia y recibe el log, y se cierra.
 El funcionamiento se puede ver en el siguiente diagrama.
 
-![](https://github.com/adgko/C-Codes-/blob/main/01_IPC/img/DiagramaArchivo.png)
+![](https://github.com/adgko/C-Codes/blob/main/01_IPC/img/DiagramaArchivo.png)
 
 #### File
 El código de File consiste en configurar el socket y esperar conexiones. Cuando se conecta un cliente, abre el log, obtiene su tamaño y hash md5, y lo envía al Downloader, para luego enviar el archivo. Al terinar, se queda esperando nuevas conexiones.
