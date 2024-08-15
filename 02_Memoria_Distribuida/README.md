@@ -34,7 +34,7 @@ Realizando combinaciones y operaciones sobre estos canales, se pueden generar di
 
 Y se obtiene una imagen similar a la siguiente
 
-![GOES_FIRE](https://github.com/adgko/C-Codes-/blob/main/02_Memoria_Distribuida/img/index.png)
+![GOES_FIRE](https://github.com/adgko/C-Codes/blob/main/02_Memoria_Distribuida/img/index.png)
 
 ### Algoritmo ejemplo
 El siguiente ejemplo desarrolllado en python describiendo paso a paso lo que ustedes tienen que hacer, pero en C. 
