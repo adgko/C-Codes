@@ -1,0 +1,11 @@
+[Unit]
+Description=Server TP3 SO2 - users
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/server_users
+ExecReload=systemctl restart server_users
+User=so-users
+
+[Install]
+WantedBy=multi-user.target

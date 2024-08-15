@@ -1,0 +1,11 @@
+[Unit]
+Description=Server TP3 SO2 - goes
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/server_goes
+ExecReload=systemctl restart server_goes
+User=so-goes
+
+[Install]
+WantedBy=multi-user.target
