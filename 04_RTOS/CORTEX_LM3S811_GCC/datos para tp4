@@ -1,0 +1,29 @@
+
+qemu-arch-extra instalar
+arm-none-eabi-gcc instalar
+
+ACtivar interrrupciones RX
+cambiar uART_ISR para que reciba RX
+
+--serial stdio para que puedameter cosas por consola a lauart
+
+borrar resetirs no se porque 
+
+pa dibujar
+OSRAMimagedraw
+osrastringdraw
+
+
+
+
+
+qemu-system-arm --serial stdio -machine lm3s811evb -cpu cortex-m3 -semihosting-config enable=on,target=native -kernel gcc/RTOSDemo.axf
+
+agregado al compiler -ggdb
+
+flags de debug 	-s -S		(Con este puedo conectarme desde el debugger)
+
+qemu-system-arm --serial stdio -machine lm3s811evb -cpu cortex-m3 -semihosting-config enable=on,target=native -kernel gcc/RTOSDemo.axf -s -S
+gdb-multiarch gcc/RTOSDemo.axf		
+	(gdb) target remote localhost:1234		(conectarse al programa en qemu)
+	layout src					(para ver el código linea por linea)
